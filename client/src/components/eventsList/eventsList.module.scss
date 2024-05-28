@@ -1,0 +1,25 @@
+.eventItemStyles {
+    display: inline-block;
+    border: solid 2px #273a64;
+
+    padding: 5px 10px;
+
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        background-color: #273a64
+    }
+};
+  
+
+.eventListStyles {
+    width: 60%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2px;
+}

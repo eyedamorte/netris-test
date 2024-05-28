@@ -1,0 +1,20 @@
+.playerContainer {
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .player {
+    width: 100%;
+    
+    cursor: pointer;
+  }
+  
+  .rectangle {
+    position: absolute;
+    background-color: green;
+    border: 1px solid rgb(1, 20, 1);
+    opacity: 0.5;
+  }
