@@ -1,5 +1,7 @@
 # Тестовое задание на позицию Frontend разработчика для компании [Netris](https://netris.ru/) ([Онлайн-демо](https://netris-test.vercel.app/))
 
+![alt text](image.png)
+
 ## Запуск проекта
 
 1. `yarn`
