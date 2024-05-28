@@ -14,17 +14,18 @@ export const EventsList = (props: EventsListType) => {
 
   const dispatch = useDispatch();
 
-  const onEventClick = (event: EventWithEndTime) => {
-    dispatch(setSelectedTime(event.timestamp));
+  const onEventClick = (timestamp: number) => {
+    dispatch(setSelectedTime(timestamp));
   };
 
   return (
-    <div className={styles.eventListStyles}>
+    <div className={styles.eventListStyles} data-testid="event-list">
       {eventsList?.map((event) => {
         return (
           <EventItem
+            data-testid={`event-item-${event.timestamp}`}
             key={event.timestamp}
-            event={event}
+            timestamp={event.timestamp}
             onClick={onEventClick}
           />
         );

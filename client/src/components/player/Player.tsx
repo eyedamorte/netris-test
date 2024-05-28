@@ -47,8 +47,6 @@ export const Player = (props: VideoPlayerProps) => {
     }
   }, [handleTimeUpdate, selectedTime]);
 
-  console.log(rectangles);
-
   return (
     <div className={styles.playerContainer}>
       <video
@@ -58,7 +56,9 @@ export const Player = (props: VideoPlayerProps) => {
         onTimeUpdate={handleTimeUpdate}
         className={styles.player}
         controls={true}
-        data-testid="video-player"
+        width={1280}
+        height={720}
+        data-testid="player"
       />
       {rectangles.map((event, index) => (
         <div
@@ -70,7 +70,6 @@ export const Player = (props: VideoPlayerProps) => {
             width: event.zone.width,
             height: event.zone.height,
           }}
-          data-testid={`event-rectangle-${index}`}
         />
       ))}
     </div>
